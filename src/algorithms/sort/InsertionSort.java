@@ -1,4 +1,10 @@
+package algorithms.sort;
+
 import utils.Output;
+
+/**
+ * 插入排序
+ */
 
 //循环不变式
 //循环不变式共有三条性质

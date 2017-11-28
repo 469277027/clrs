@@ -12,4 +12,8 @@ public class Output {
         System.out.println(title + ":" + Arrays.toString(array));
     }
 
+    public static void printString(String s){
+        System.out.println(s);
+    }
+
 }
