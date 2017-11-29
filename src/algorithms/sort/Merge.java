@@ -8,7 +8,19 @@ import utils.Output;
 
 public class Merge {
 
-    public static int[] mergeSort(int[] unSortArray, int positionL, int positionM, int positionR) {
+
+    public static int[] mergeSort(int[] unSortArray, int p, int r) {
+        if (p < r) {
+            int q = (p + r) / 2;
+            mergeSort(unSortArray, p, q);
+            mergeSort(unSortArray, q + 1, r);
+            merge(unSortArray, p, q, r);
+        }
+        return unSortArray;
+    }
+
+
+    private static void merge(int[] unSortArray, int positionL, int positionM, int positionR) {
         int n1 = positionM - positionL + 1; // 11 - 8 + 1 = 4
         int n2 = positionR - positionM;// 15 - 11 = 4
 
@@ -39,8 +51,6 @@ public class Merge {
             }
             Output.printIntArray(unSortArray);
         }
-
-        return unSortArray;
 
     }
 

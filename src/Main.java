@@ -25,8 +25,8 @@ public class Main {
      * 归并排序
      */
     private static void mergeSort() {
-        int[] unSortArray = new int[]{5, 5, 5, 5, 5, 5, 5, 5, 2, 4, 5, 7, 1, 2, 3, 6, 9, 9, 9, 9, 9};
-        Output.printIntArray(Merge.mergeSort(unSortArray, 8, 11, 15));
+        int[] unSortArray = new int[]{2, 4, 5, 7, 1, 2, 3, 6,1};
+        Output.printIntArray(Merge.mergeSort(unSortArray, 0, unSortArray.length - 1));
     }
 
 
